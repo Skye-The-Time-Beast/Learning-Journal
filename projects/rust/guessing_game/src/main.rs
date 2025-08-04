@@ -12,10 +12,12 @@ fn main() {
     // "mut" makes said variable 'mutable' meaning changeable and not fixed
     // "guess" is the name of the variable
     //you declare what type of variable, in this case a String
-    //
+    //::new is calling the new function whilst the :: indicates new is associated with the "String" part
     let mut guess = String::new();
 
+    //This calls the stdin function from the io module of the std library (DO NOT CONFUSE STDIN WITH STD)
     io::stdin()
+        //
         .read_line(&mut guess)
         .expect("Failed to read line");
 
